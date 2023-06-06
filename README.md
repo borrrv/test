@@ -30,7 +30,7 @@ api/create_tests/
 }
 ```
 ```
-api/result_test_iq
+api/result_test_iq/<str:login>/
 ```
 - (POST) Сохранить результаты теста EQ
 
@@ -43,7 +43,7 @@ api/result_test_iq
 }
 ```
 ```
-api/result_test_eq
+api/result_test_eq/<str:login>/
 ```
 - (GET) Результаты тестов по логину
 
