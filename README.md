@@ -22,18 +22,39 @@ api/create_tests/
 - (POST) Сохранить результаты теста IQ
 
 обязательно поле: iq_score
+
+Формат:
+```
+{
+    "iq_score": 11
+}
+```
 ```
 api/result_test_iq
 ```
 - (POST) Сохранить результаты теста EQ
 
 обязательно поле: eq_letters
+
+Формат:
+```
+{
+    "eq_letters": "в, а, б, д, г"
+}
+```
 ```
 api/result_test_eq
 ```
 - (GET) Результаты тестов по логину
 
 обязательное поле: login
+
+Формат:
+```
+{
+    "login": "UytYoEFudJ"
+}
+```
 ```
 api/results/
 ```
