@@ -11,6 +11,7 @@ poetry install
 ```
 - Запуск проекта
 ```
+python manage.py migrate
 python manage.py runserver
 ```
 ## Запросы*
