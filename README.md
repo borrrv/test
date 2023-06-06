@@ -58,3 +58,8 @@ api/result_test_eq
 ```
 api/results/
 ```
+
+### Технологии
+- Python 3.10
+- Django 3.2
+- DRF 3.12
