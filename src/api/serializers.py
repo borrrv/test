@@ -58,6 +58,12 @@ class ResultTestEQSerializer(BaseTestSeriazizer):
             'eq_time',
         )
 
+    def validate_eq_letters(self, value):
+        eq_letters = value.split(', ')
+        if len(eq_letters) > 5:
+            raise serializers.ValidationError('Не больше 5 элементов')
+        return value
+
 
 class ResultAllTestsSerializer(BaseTestSeriazizer):
     """Результаты всех тестов по логину"""
